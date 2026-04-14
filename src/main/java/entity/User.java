@@ -38,26 +38,6 @@ public class User {
         return userName;
     }
 
-    @Column(name = "Email",nullable = false, unique = true ,length = 50)
-    private String email;
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    @Column(name = "PhoneNumber",nullable = true, unique = true, length = 20)
-    private String phoneNumber;
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
     @Column(name = "Password",nullable = false, unique = true, length = 20)
     private String password;
     public void setPassword(String password) {
